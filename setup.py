@@ -1,9 +1,11 @@
 from setuptools import setup,find_packages
+from typing import List
 
-def get_requirements()->list[str]:
-    
-    requirements_list =list[str]=[]
-    
+def get_requirements() -> List[str]:
+    requirements_list: List[str] = []
+    with open("requirements.txt") as file:
+        requirements_list = file.readlines()
+        requirements_list = [req.strip() for req in requirements_list if req.strip() and not req.startswith("-e")]
     return requirements_list
 
 setup (

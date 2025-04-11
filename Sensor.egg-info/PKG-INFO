@@ -3,3 +3,9 @@ Name: Sensor
 Version: 0.0.1
 Author: Yogesh
 Author-email: yogiafse@gmail.com
+Requires-Dist: pymongo[srv]==4.2.0
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: pymango
+Requires-Dist: python-dotenv
